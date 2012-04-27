@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/misc_files
+END
+grc_gr_gen2_rfid.m4
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/misc_files/grc_gr_gen2_rfid.m4
+END
+fusb_linux.cc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/misc_files/fusb_linux.cc
+END
+gen2_reader.rbf
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/misc_files/gen2_reader.rbf
+END
+usrp_source_base.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/misc_files/usrp_source_base.cc
+END

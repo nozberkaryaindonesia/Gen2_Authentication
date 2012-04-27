@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib
+END
+rfid_reader_decoder.cc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid_reader_decoder.cc
+END
+rfid_reader_decoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid_reader_decoder.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/Makefile.in
+END
+reader_vars.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/reader_vars.h
+END
+rfid_gen2_reader.cc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid_gen2_reader.cc
+END
+rfid_gen2_reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid_gen2_reader.h
+END
+rfid_clock_recovery_zc_ff.cc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid_clock_recovery_zc_ff.cc
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/Makefile.am
+END
+rfid_clock_recovery_zc_ff.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid_clock_recovery_zc_ff.h
+END
+rfid.i
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid.i
+END
+rfid.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid.py
+END
+rfid_cmd_gate.cc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid_cmd_gate.cc
+END
+rfid_cmd_gate.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/lib/rfid_cmd_gate.h
+END

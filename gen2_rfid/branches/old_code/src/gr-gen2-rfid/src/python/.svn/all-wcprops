@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/python
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/python/Makefile.in
+END
+run_tests
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/python/run_tests
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/python/Makefile.am
+END
+run_tests.in
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/python/run_tests.in
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/625/projects/gen2_rfid/branches/old_code/src/gr-gen2-rfid/src/python/Makefile
+END
