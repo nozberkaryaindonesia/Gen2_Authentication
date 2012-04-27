@@ -30,11 +30,13 @@ A video record of this demo can be found here: xxxxxxxxxx
 	libqt4-dev python-numpy ccache python-opengl libgsl0-dev \
 	python-cheetah python-lxml doxygen qt4-dev-tools \
 	libqwt5-qt4-dev libqwtplot3d-qt4-dev pyqt4-dev-tools python-qwt5-qt4 git-core
+
 3. download GnuRadio and Gen 2 RFID Tools:
 
 	git clone http://gnuradio.org/git/gnuradio.git
-4. copy ~/gen2_rfid/trunk/rfid/misc_files/usrp_source_base.cc to ~/gnuradio/gr-usrp/src/ (please find "gen2_rfid" folder in the EnvClone and copy it to ~)
-   copy ~/gen2_rfid/trunk/rfid/misc_files/fusb_linux.cc to ~/gnuradio/usrp/host/lib/
+
+4. copy ~/gen2_rfid/trunk/rfid/misc_files/usrp_source_base.cc to ~/gnuradio/gr-usrp/src/ (please find "gen2_rfid" folder in the EnvClone and copy it to ~) and copy ~/gen2_rfid/trunk/rfid/misc_files/fusb_linux.cc to ~/gnuradio/usrp/host/lib/
+
 5. Install GnuRadio (following the instructions in http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall)
 
 	cd gnuradio
@@ -44,6 +46,7 @@ A video record of this demo can be found here: xxxxxxxxxx
 	make
 	make check
 	sudo make install
+
 6. Configuring USRP support (when USRP1 is connected to the computer via USB cable)
 
 	sudo addgroup usrp
@@ -53,12 +56,15 @@ A video record of this demo can be found here: xxxxxxxxxx
 	sudo mv tmpfile /etc/udev/rules.d/10-usrp.rules
 	sudo killall -HUP udevd
 	ls -lR /dev/bus/usb | grep usrp
-if something meaningful is displayed, the USRP is now works with the system 
+
+if something meaningful is displayed, the USRP is now works with the system
+
 7. Install Gen 2 RFID Tools (follow the instructions in https://www.cgran.org/browser/projects/gen2_rfid/trunk/rfid/README.rfid)
 
 	cd gen2_rfid/trunk/rfid/
 	./bootstrap; ./configure; make; sudo make install;
 	sudo ldconfig
+
 5. To run the demo, by assuming the hardware is connected properly, open a command/terminal window
 
 	cd gen2_rfid/trunk/rfid/apps/
