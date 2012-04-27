@@ -19,8 +19,8 @@ A video record of this demo can be found here: xxxxxxxxxx
 
 
 ##Install GnuRadio and Gen 2 RFID Tools Manually##
-1. install Ubuntu 10.04(lucid) 32-bit LTS. (while 64-bit version should also work)
-2. download/install necessary linux tools:
+install Ubuntu 10.04(lucid) 32-bit LTS. (while 64-bit version should also work)
+download/install necessary linux tools:
 
 	sudo apt-get install git-core; sudo apt-get install subversion
 	sudo apt-get -y install libfontconfig1-dev libxrender-dev libpulse-dev \
@@ -31,11 +31,11 @@ A video record of this demo can be found here: xxxxxxxxxx
 	python-cheetah python-lxml doxygen qt4-dev-tools \
 	libqwt5-qt4-dev libqwtplot3d-qt4-dev pyqt4-dev-tools python-qwt5-qt4 git-core
 
-3. download GnuRadio and Gen 2 RFID Tools:
+download GnuRadio and Gen 2 RFID Tools:
 
 	git clone http://gnuradio.org/git/gnuradio.git
 
-4. copy ~/gen2_rfid/trunk/rfid/misc_files/usrp_source_base.cc to ~/gnuradio/gr-usrp/src/ (please find "gen2_rfid" folder in the EnvClone and copy it to ~) and copy ~/gen2_rfid/trunk/rfid/misc_files/fusb_linux.cc to ~/gnuradio/usrp/host/lib/
+copy ~/gen2_rfid/trunk/rfid/misc_files/usrp_source_base.cc to ~/gnuradio/gr-usrp/src/ (please find "gen2_rfid" folder in the EnvClone and copy it to ~) and copy ~/gen2_rfid/trunk/rfid/misc_files/fusb_linux.cc to ~/gnuradio/usrp/host/lib/
 
 Install GnuRadio (following the instructions in http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall)
 
@@ -59,13 +59,13 @@ Configuring USRP support (when USRP1 is connected to the computer via USB cable)
 
 if something meaningful is displayed, the USRP is now works with the system
 
-7. Install Gen 2 RFID Tools (follow the instructions in https://www.cgran.org/browser/projects/gen2_rfid/trunk/rfid/README.rfid)
+Install Gen 2 RFID Tools (follow the instructions in https://www.cgran.org/browser/projects/gen2_rfid/trunk/rfid/README.rfid)
 
 	cd gen2_rfid/trunk/rfid/
 	./bootstrap; ./configure; make; sudo make install;
 	sudo ldconfig
 
-5. To run the demo, by assuming the hardware is connected properly, open a command/terminal window
+To run the demo, by assuming the hardware is connected properly, open a command/terminal window
 
 	cd gen2_rfid/trunk/rfid/apps/
 	sudo GR_SCHEDULER=STS nice -n -20 ./WISP_reader.py
