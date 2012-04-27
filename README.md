@@ -37,7 +37,7 @@ A video record of this demo can be found here: xxxxxxxxxx
 
 4. copy ~/gen2_rfid/trunk/rfid/misc_files/usrp_source_base.cc to ~/gnuradio/gr-usrp/src/ (please find "gen2_rfid" folder in the EnvClone and copy it to ~) and copy ~/gen2_rfid/trunk/rfid/misc_files/fusb_linux.cc to ~/gnuradio/usrp/host/lib/
 
-5. Install GnuRadio (following the instructions in http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall)
+Install GnuRadio (following the instructions in http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall)
 
 	cd gnuradio
 	git reset --hard 26fc07eac6a3029e2d7361b1502f69e7592e708b
@@ -47,7 +47,7 @@ A video record of this demo can be found here: xxxxxxxxxx
 	make check
 	sudo make install
 
-6. Configuring USRP support (when USRP1 is connected to the computer via USB cable)
+Configuring USRP support (when USRP1 is connected to the computer via USB cable)
 
 	sudo addgroup usrp
 	sudo usermod -G usrp -a <YOUR_USERNAME>
