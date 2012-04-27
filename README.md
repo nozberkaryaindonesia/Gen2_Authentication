@@ -1,13 +1,15 @@
-#Summary#
+#Gen2 Authentication between a WISP Tag and a USRP Reader#
+
+##Summary##
 This git contains the source codes to present the demo named "Gen2 Authentication between a WISP Tag and a USRP Reader" as well as to further develop software tools for the interaction WISP tags and USRP readers. The codes for the USRP reader is based upon Michael Buettner's "Gen 2 RFID Tools" (fork from: https://www.cgran.org/wiki/Gen2), while the codes for the WISP tag is based upon the standard firmware provided by the WISP community (fork from: http://wisp.wikispaces.com/WISPFirmware).
 
 This demo essentially confirms that authentication (based on symmetric cryptographic primitives) is able to be performed under the current framework specified by the EPC Gen2 standard.
 
-#Demo#
+##Demo##
 A video record of this demo can be found here: xxxxxxxxxx
 
 
-#Hardware Setup#
+##Hardware Setup##
 1. USRP1 from ettus (the black one)
 2. Two RFX900 daughterboards, properly plugged to the USRP1
 3. Two antennas attach to TX/RX ports on the two daughterboards respectively:
@@ -18,7 +20,7 @@ A video record of this demo can be found here: xxxxxxxxxx
 6. Let the tag stand CLOSELY in the middle of the mini-guardrail antenna. Make sure the tag faces the antenna.
 
 
-#Install GnuRadio and Gen 2 RFID Tools Manually#
+##Install GnuRadio and Gen 2 RFID Tools Manually##
 1. install Ubuntu 10.04(lucid) 32-bit LTS. (while 64-bit version should also work)
 2. download/install necessary linux tools:
 	sudo apt-get install git-core; sudo apt-get install subversion
@@ -59,7 +61,7 @@ if something meaningful is displayed, the USRP is now works with the system
 	sudo GR_SCHEDULER=STS nice -n -20 ./WISP_reader.py
 
 
-#How the Authentication Works#
+##How the Authentication Works##
 In EPC C1G2 standard, the QUERY carries out in the following fashion:
 	Reader				               				Tag
 				-----------QUERY---------->
@@ -94,12 +96,12 @@ To summarize:
 10. Note that both RN16_T and RN16_R are too short to be used in a real authentication scenario. I did in this way primarily because it is a demo and random number generation is not easy with the current WISP tag.
 
 
-#Misc#
+##Misc##
 
-##EPC C1G2 standard##
+###EPC C1G2 standard###
 EPC C1G2 standard is especially useful for this demo (especially page 88, 89, 90, 97), which can be accssed from here: http://www.gs1.org/gsmp/kc/epcglobal/uhfc1g2/uhfc1g2_1_2_0-standard-20080511.pdf.
 
-##How to hack Gen 2 RFID Tools to make it work (for my purpose)##
+###How to hack Gen 2 RFID Tools to make it work (for my purpose)###
 Michael's implementation is awesome. However, due to the use of different antennas, the gen2 reader does not produce meaningful results for me at the very beginning. Hence, following tweaks are applied:
 1. Decoding: I used a more aggressive decoding method for pulling out tag's message bits from the sampled signals (see rfid_tag_decoder_f.cc for details). It does not mean to be generally superior, but it does work well in this implementation.
 2. Timing: as aforementioned, two Gen2 QUERY sessions are used to accomplish one authentication session.
