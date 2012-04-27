@@ -12,9 +12,7 @@ A video record of this demo can be found here: xxxxxxxxxx
 ##Hardware Setup##
 1. USRP1 from ettus (the black one)
 2. Two RFX900 daughterboards, properly plugged to the USRP1
-3. Two antennas attach to TX/RX ports on the two daughterboards respectively:
-	connect the standard dipole antenna (https://www.ettus.com/product/details/VERT900) to daughterboard A
-	connect the mini-guardrail antenna (http://www.impinj.com/Documents/Reader_Antennas/Mini-Guardrail_Antenna_Datasheet) to daughterboard B
+3. Two antennas attach to TX/RX ports on the two daughterboards respectively: (1) onnect the standard dipole antenna (https://www.ettus.com/product/details/VERT900) to daughterboard A; (2) connect the mini-guardrail antenna (http://www.impinj.com/Documents/Reader_Antennas/Mini-Guardrail_Antenna_Datasheet) to daughterboard B
 4. Connect the WISP tag to the USB debugger, where the latter is connected to computer running Windows XP
 5. Load the (tweaked) WISP firmware to the WISP tag (the blue one 0x41) via IAR Embedded Workbench for TI MSP430 v5.40 (downloaded from http://www.iar.com/en/Products/IAR-Embedded-Workbench/TI-MSP430/)
 6. Let the tag stand CLOSELY in the middle of the mini-guardrail antenna. Make sure the tag faces the antenna.
@@ -23,6 +21,7 @@ A video record of this demo can be found here: xxxxxxxxxx
 ##Install GnuRadio and Gen 2 RFID Tools Manually##
 1. install Ubuntu 10.04(lucid) 32-bit LTS. (while 64-bit version should also work)
 2. download/install necessary linux tools:
+
 	sudo apt-get install git-core; sudo apt-get install subversion
 	sudo apt-get -y install libfontconfig1-dev libxrender-dev libpulse-dev \
 	swig g++ automake autoconf libtool python-dev libfftw3-dev \
@@ -32,10 +31,12 @@ A video record of this demo can be found here: xxxxxxxxxx
 	python-cheetah python-lxml doxygen qt4-dev-tools \
 	libqwt5-qt4-dev libqwtplot3d-qt4-dev pyqt4-dev-tools python-qwt5-qt4 git-core
 3. download GnuRadio and Gen 2 RFID Tools:
+
 	git clone http://gnuradio.org/git/gnuradio.git
 4. copy ~/gen2_rfid/trunk/rfid/misc_files/usrp_source_base.cc to ~/gnuradio/gr-usrp/src/ (please find "gen2_rfid" folder in the EnvClone and copy it to ~)
    copy ~/gen2_rfid/trunk/rfid/misc_files/fusb_linux.cc to ~/gnuradio/usrp/host/lib/
 5. Install GnuRadio (following the instructions in http://gnuradio.org/redmine/projects/gnuradio/wiki/UbuntuInstall)
+
 	cd gnuradio
 	git reset --hard 26fc07eac6a3029e2d7361b1502f69e7592e708b
 	./bootstrap
@@ -44,6 +45,7 @@ A video record of this demo can be found here: xxxxxxxxxx
 	make check
 	sudo make install
 6. Configuring USRP support (when USRP1 is connected to the computer via USB cable)
+
 	sudo addgroup usrp
 	sudo usermod -G usrp -a <YOUR_USERNAME>
 	echo 'ACTION=="add", BUS=="usb", SYSFS{idVendor}=="fffe", SYSFS{idProduct}=="0002", GROUP:="usrp", MODE:="0660"' > tmpfile
@@ -53,10 +55,12 @@ A video record of this demo can be found here: xxxxxxxxxx
 	ls -lR /dev/bus/usb | grep usrp
 if something meaningful is displayed, the USRP is now works with the system 
 7. Install Gen 2 RFID Tools (follow the instructions in https://www.cgran.org/browser/projects/gen2_rfid/trunk/rfid/README.rfid)
+
 	cd gen2_rfid/trunk/rfid/
 	./bootstrap; ./configure; make; sudo make install;
 	sudo ldconfig
 5. To run the demo, by assuming the hardware is connected properly, open a command/terminal window
+
 	cd gen2_rfid/trunk/rfid/apps/
 	sudo GR_SCHEDULER=STS nice -n -20 ./WISP_reader.py
 
