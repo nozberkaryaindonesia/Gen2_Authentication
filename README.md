@@ -73,6 +73,7 @@ if something meaningful is displayed, the USRP is now works with the system
 
 ##How the Authentication Works##
 In EPC C1G2 standard, the QUERY carries out in the following fashion:
+
 	Reader				               				Tag
 				-----------QUERY---------->
 				<----------RN16------------
@@ -81,6 +82,7 @@ In EPC C1G2 standard, the QUERY carries out in the following fashion:
 				------------NAK----------->
 
 Due to the stringent responding timing as required by EPC C1G2, I have to use two QUERY sessions to complete one authentication (since the computation of the authentication code, even with the lightweight stream cipher WG-7 (http://goo.gl/siUm8), takes sooooo long). My design of the interactions for the authentication purpose can be described as follows:
+
 	Reader											Tag
 				-----------QUERY---------->
 				<----------RN16_T----------
