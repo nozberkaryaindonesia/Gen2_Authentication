@@ -1,21 +1,20 @@
 #Gen2 Authentication between a WISP Tag and a USRP Reader#
 
 ##Summary##
-This git contains the source codes to present the demo named "Gen2 Authentication between a WISP Tag and a USRP Reader" as well as to further develop software tools for the interaction WISP tags and USRP readers. The codes for the USRP reader is based upon Michael Buettner's "Gen 2 RFID Tools" (fork from: https://www.cgran.org/wiki/Gen2), while the codes for the WISP tag is based upon the standard firmware provided by the WISP community (fork from: http://wisp.wikispaces.com/WISPFirmware).
+This git contains the source codes to present the demo named "Gen2 Authentication between a WISP Tag and a USRP Reader" as well as to further develop software tools for the interaction between the WISP tags and the USRP readers. The codes for the USRP reader is based upon Michael Buettner's "Gen 2 RFID Tools" (fork from: https://www.cgran.org/wiki/Gen2), while the codes for the WISP tag is based upon the standard firmware provided by the WISP community (fork from: http://wisp.wikispaces.com/WISPFirmware).
 
-This demo essentially confirms that authentication (based on symmetric cryptographic primitives) is able to be performed under the current framework specified by the EPC Gen2 standard.
+This demo essentially confirms that the authentication based on symmetric cryptographic primitives is able to be performed under the current framework specified by the EPC Gen2 standard.
 
 ##Demo##
-A video record of this demo can be found here: xxxxxxxxxx
+A video record of this demo can be found here: http://www.youtube.com/watch?v=xxxxxxxx (to be updated shortly)
 
 
 ##Hardware Setup##
-1. USRP1 from ettus (the black one)
-2. Two RFX900 daughterboards, properly plugged to the USRP1
+1. USRP1 from ettus (https://www.ettus.com/product/details/USRP-PKG)
+2. Two RFX900 daughterboards, properly plugged into the USRP1
 3. Two antennas attach to TX/RX ports on the two daughterboards respectively: (1) onnect the standard dipole antenna (https://www.ettus.com/product/details/VERT900) to daughterboard A; (2) connect the mini-guardrail antenna (http://www.impinj.com/Documents/Reader_Antennas/Mini-Guardrail_Antenna_Datasheet) to daughterboard B
-4. Connect the WISP tag to the USB debugger, where the latter is connected to computer running Windows XP
-5. Load the (tweaked) WISP firmware to the WISP tag (the blue one 0x41) via IAR Embedded Workbench for TI MSP430 v5.40 (downloaded from http://www.iar.com/en/Products/IAR-Embedded-Workbench/TI-MSP430/)
-6. Let the tag stand CLOSELY in the middle of the mini-guardrail antenna. Make sure the tag faces the antenna.
+4. Connect the WISP tag to the USB debugger, and load the (tweaked) WISP firmware to the WISP tag (the blue one 0x41) via IAR Embedded Workbench for TI MSP430 v5.40 (http://www.iar.com/en/Products/IAR-Embedded-Workbench/TI-MSP430/)
+5. Let the tag stand CLOSELY to the middle point of the mini-guardrail antenna. Make sure the tag faces the antenna.
 
 
 ##Install GnuRadio and Gen 2 RFID Tools Manually##
